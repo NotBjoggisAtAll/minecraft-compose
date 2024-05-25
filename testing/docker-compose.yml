@@ -7,7 +7,7 @@ services:
     environment:
       - "EULA=TRUE"
       - "TYPE=PAPER"
-      - "MEMORY=1G"
+      - "MEMORY=7G"
     tty: true
     stdin_open: true
     restart: unless-stopped
