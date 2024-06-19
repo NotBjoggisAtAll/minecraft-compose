@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+  minecraft:
+    image: itzg/minecraft-server
+    container_name: minecraft
+    environment:
+      - "EULA=TRUE"
+      - "TYPE=FORGE"
+      - "VERSION=1.20.2"
+      - "FORGE_VERSION=48.1.0"
+      - "MEMORY=7G"
+    tty: true
+    stdin_open: true
+    restart: unless-stopped
+    network_mode: host
+    volumes:
+      # attach a directory relative to the directory containing this compose file
+      - /mnt/minecraft-volume-02/minecraft-data:/data
