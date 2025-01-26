@@ -7,7 +7,7 @@ services:
     environment:
       - "EULA=TRUE"
       - "TYPE=FORGE"
-      - "VERSION=1.20.2"
+      - "VERSION=1.21.4"
       - "FORGE_VERSION=48.1.0"
       - "MEMORY=7G"
     tty: true
